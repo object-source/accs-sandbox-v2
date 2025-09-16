@@ -182,6 +182,8 @@ export default async function decorate(block) {
       enableUpdateItemQuantity: enableUpdateItemQuantity === 'true',
       enableRemoveItem: enableRemoveItem === 'true',
       undo: undo === 'true',
+      showDiscount: 'true',
+      showSavings: 'true',
       slots: {
         Thumbnail: (ctx) => {
           const { item, defaultImageProps } = ctx;
@@ -199,7 +201,7 @@ export default async function decorate(block) {
             },
           });
         },
-
+        
         Footer: (ctx) => {
           // Edit Link
           if (ctx.item?.itemType === 'ConfigurableCartItem' && enableUpdatingProduct === 'true') {

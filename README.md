@@ -35,3 +35,31 @@ This is a custom script which copies files out of `node_modules` and into a loca
 Major changes are described and documented as part of pull requests and tracked via the `changelog` tag. To keep your project up to date, please follow this list:
 
 <https://github.com/hlxsites/aem-boilerplate-commerce/issues?q=label%3Achangelog+is%3Aclosed>
+
+
+Site Details
+- Site: https://main--accs-sandbox-v2--object-source.aem.live
+- Code: https://github.com/object-source/accs-sandbox-v2
+- Content: https://da.live/#/object-source/accs-sandbox-v2
+- Commerce Config: https://github.com/object-source/accs-sandbox-v2/blob/main/config.json
+
+For next steps, including how to customize your storefront and make it your own, check out the Adobe Commerce Storefront Docs: https://experienceleague.adobe.com/developer/commerce/storefront/
+
+⚠️ Important: Secure Your Site
+Warning: Your site is not protected by default. Anyone can access and modify your content and code.
+
+To secure your site, please follow these steps:
+
+Content protection: Configure permissions for your content in Document Authoring
+Site authentication: Set up authentication for your EDS site
+🔧 Configuration Check Required
+Important: Since you provided a custom Commerce GraphQL endpoint, a config.json has been automatically generated to match your environment.
+
+Please review the following configuration details:
+
+Headers: Ensure that all required Commerce headers are set correctly.
+Analytics: Verify that store details, currency codes, and environment settings align with your Commerce instance
+Endpoints: Confirm that GraphQL endpoints point to the correct services
+For more information about required configuration values, see the Commerce Configuration documentation.
+
+Note: Incorrect configuration values can prevent your storefront from connecting to your Commerce backend properly.
