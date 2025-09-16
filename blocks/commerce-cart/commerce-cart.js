@@ -201,7 +201,6 @@ export default async function decorate(block) {
             },
           });
         },
-        
         Footer: (ctx) => {
           // Edit Link
           if (ctx.item?.itemType === 'ConfigurableCartItem' && enableUpdatingProduct === 'true') {
