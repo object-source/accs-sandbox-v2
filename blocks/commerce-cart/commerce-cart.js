@@ -182,7 +182,7 @@ export default async function decorate(block) {
       enableUpdateItemQuantity: enableUpdateItemQuantity === 'true',
       enableRemoveItem: enableRemoveItem === 'true',
       undo: undo === 'true',
-      showDiscount: 'true',
+      showDiscount: 'false',
       showSavings: 'true',
       slots: {
         Thumbnail: (ctx) => {
