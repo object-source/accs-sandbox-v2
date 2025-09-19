@@ -1,7 +1,8 @@
 const { decorateIcons, loadScript, loadCSS } = await import(`${window.hlx.codeBasePath}/scripts/aem.js`);
 
-const VIDEO_JS_SCRIPT = `${window.hlx.aemassets?.codeBasePath ?? ''}/blocks/video/videojs/video.min.js`;
-const VIDEO_JS_CSS = `${window.hlx.aemassets?.codeBasePath ?? ''}/blocks/video/videojs/video-js.min.css`;
+const VIDEO_JS_VERSION = '8.23.3';
+const VIDEO_JS_SCRIPT = `https://vjs.zencdn.net/${VIDEO_JS_VERSION}/video.min.js`;
+const VIDEO_JS_CSS = `https://vjs.zencdn.net/${VIDEO_JS_VERSION}/video-js.min.css`;
 const VIDEO_JS_LOAD_EVENT = 'videojs-loaded';
 
 function getDeviceSpecificVideoUrl(videoUrl) {
