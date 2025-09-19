@@ -21,13 +21,25 @@
 
 @media (min-width: 900px) {
   .columns > div {
-    align-items: center;
+    align-items: start;
     flex-direction: unset;
-    gap: 24px;
+    gap: 10px;
+    align-items: stretch;
   }
 
   .columns > div > div {
     flex: 1;
     order: unset;
+    > p {
+      padding: 0 20px;
+    }
+  }
+
+  .columns-3-cols.columns > div > div {
+    flex: 1;
+    order: unset;
+    background-color: var(--color-neutral-50);
+    border-radius: var(--shape-border-radius-2);
+    border: var(--shape-border-width-1) solid var(--color-neutral-500);
   }
 }
