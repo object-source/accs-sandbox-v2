@@ -1,3 +1,8 @@
+.columns-container {
+  padding: 40px 0 0;
+  margin: 0!important;
+}
+
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -42,14 +47,16 @@
   .columns > div > div {
     flex: 1;
     order: unset;
-    
+
     > p {
       padding: 0 20px;
     }
   }
 
-  .columns-3-cols.columns p {
-    text-align: center;
+  .columns-2-cols.columns.block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
   .columns-3-cols.columns > div > div {
