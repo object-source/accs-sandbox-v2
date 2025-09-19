@@ -14,6 +14,7 @@
 .columns strong { 
   font-weight: bold;
 }
+
 .columns h3 { 
   font-weight: bold;
   padding: 0 20px;
@@ -33,7 +34,6 @@
 
 @media (min-width: 900px) {
   .columns > div {
-    align-items: start;
     flex-direction: unset;
     gap: 10px;
     align-items: stretch;
@@ -42,6 +42,7 @@
   .columns > div > div {
     flex: 1;
     order: unset;
+    
     > p {
       padding: 0 20px;
     }
