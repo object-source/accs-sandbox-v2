@@ -7,6 +7,18 @@
   width: 100%;
 }
 
+.columns p { 
+  text-align: left;
+}
+
+.columns strong { 
+  font-weight: bold;
+}
+.columns h3 { 
+  font-weight: bold;
+  padding: 0 20px;
+}
+
 .columns > div > div {
   order: 1;
 }
@@ -33,6 +45,10 @@
     > p {
       padding: 0 20px;
     }
+  }
+
+  .columns-3-cols.columns p {
+    text-align: center;
   }
 
   .columns-3-cols.columns > div > div {
