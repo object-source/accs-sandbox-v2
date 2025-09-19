@@ -1,5 +1,4 @@
 const { decorateIcons, loadScript, loadCSS } = await import(`${window.hlx.codeBasePath}/scripts/aem.js`);
-
 const VIDEO_JS_VERSION = '8.23.3';
 const VIDEO_JS_SCRIPT = `https://vjs.zencdn.net/${VIDEO_JS_VERSION}/video.min.js`;
 const VIDEO_JS_CSS = `https://vjs.zencdn.net/${VIDEO_JS_VERSION}/video-js.min.css`;
