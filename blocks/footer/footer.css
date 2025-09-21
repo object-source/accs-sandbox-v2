@@ -79,7 +79,7 @@ footer .footer p {
         flex: none
     }
 
-    .footer .section.columns-container .default-content-wrapper {
+    .footer .section.columns-container .default-content-wrapper p {
         text-align: end;
     }
 }
