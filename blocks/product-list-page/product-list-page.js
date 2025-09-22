@@ -69,7 +69,7 @@ export default async function decorate(block) {
     await search({
       phrase: '', // search all products in the category
       currentPage: page ? Number(page) : 1,
-      pageSize: 8,
+      pageSize: 9,
       sort: sort ? getSortFromParams(sort) : [{ attribute: 'position', direction: 'DESC' }],
       filter: [
         { attribute: 'categoryPath', eq: config.urlpath }, // Add category filter
@@ -83,7 +83,7 @@ export default async function decorate(block) {
     await search({
       phrase: q || '',
       currentPage: page ? Number(page) : 1,
-      pageSize: 8,
+      pageSize: 9,
       sort: getSortFromParams(sort),
       filter: getFilterFromParams(filter),
     }).catch(() => {
