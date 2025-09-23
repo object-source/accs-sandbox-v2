@@ -480,3 +480,8 @@ body.columns main > .section:empty {
 main[hidden] {
   display: none !important;
 }
+
+.eds-demo {
+  background-color: #c40707;
+  color: #ffffff;
+}
