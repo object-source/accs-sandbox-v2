@@ -1,7 +1,7 @@
 mountpoints:
   /:
-    url: https://content.da.live/object-source/accs-sandbox-v2/
-    type: markup
-
+    url: "https://author-p167261-e1795720.adobeaemcloud.com/bin/franklin.delivery/object-source/os-aem-accs/main"
+    type: "markup"
+    suffix: ".html"
 folders:
   /products/: /products/default
