@@ -1,0 +1,115 @@
+{
+  "definitions": [
+    {
+      "title": "Luxury Events",
+      "id": "luxury-events",
+        "plugins": {
+          "da": {
+            "unsafeHTML": "<div class=\"luxury-events\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\" alt=\"Logo\"></picture>Destination Luxury</div><div>EVENTS, STORIES AND MORE</div></div><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\" alt=\"Event\"></picture></div><div>EVENT TITLE</div><div>Event description goes here</div><div><a href=\"#\">Read more +</a></div></div></div>"
+          }
+        },
+      "model": "luxury-events",
+      "filter": "luxury-events"
+    },
+    {
+      "title": "Event Card",
+      "id": "luxury-event-card",
+      "plugins": {
+        "da": {
+          "unsafeHTML": "<div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\" alt=\"Event\"></picture></div><div>EVENT TITLE</div><div>Event description goes here</div><div><a href=\"#\">Read more +</a></div></div>"
+        }
+      },
+      "model": "luxury-event-card"
+    }
+  ],
+  "models": [
+    {
+      "id": "luxury-events",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[src]",
+          "label": "Logo Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[alt]",
+          "label": "Logo Alt Text",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "div:nth-child(1)>div:nth-child(1)",
+          "label": "Title",
+          "value": "Destination Luxury"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "div:nth-child(1)>div:nth-child(2)",
+          "label": "Subtitle",
+          "value": "EVENTS, STORIES AND MORE, FROM PICCADILLY AND BEYOND"
+        }
+      ]
+    },
+    {
+      "id": "luxury-event-card",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[src]",
+          "label": "Card Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[alt]",
+          "label": "Image Alt Text",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "div:nth-child(2)",
+          "label": "Event Title",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "name": "div:nth-child(3)",
+          "value": "",
+          "label": "Description",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "div:nth-child(4)>a:nth-child(1)[href]",
+          "label": "Link URL",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "div:nth-child(4)>a:nth-child(1)",
+          "label": "Link Text",
+          "value": "Read more +"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "luxury-events",
+      "components": [
+        "luxury-event-card"
+      ]
+    }
+  ]
+}

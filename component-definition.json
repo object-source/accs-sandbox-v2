@@ -1,0 +1,329 @@
+{
+  "groups": [
+    {
+      "title": "Default Content",
+      "id": "default",
+      "components": [
+        {
+          "title": "Text",
+          "id": "text",
+          "plugins": {
+            "da": {
+              "name": "text",
+              "type": "text"
+            }
+          }
+        },
+        {
+          "title": "Image",
+          "id": "image",
+          "plugins": {
+            "da": {
+              "name": "image",
+              "type": "image"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Sections",
+      "id": "sections",
+      "components": [
+        {
+          "title": "Section",
+          "id": "section",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div></div>"
+            }
+          },
+          "filter": "section",
+          "model": "section"
+        }
+      ]
+    },
+    {
+      "title": "Blocks",
+      "id": "blocks",
+      "components": [
+        {
+          "title": "Accordion",
+          "id": "accordion",
+          "plugins": {
+            "da": {
+              "name": "accordion",
+              "rows": 1,
+              "columns": 2
+            }
+          }
+        },
+        {
+          "title": "Accordion Item",
+          "id": "accordion-item",
+          "plugins": {
+            "da": {
+              "name": "accordion-item",
+              "rows": 2,
+              "columns": 0
+            }
+          }
+        },
+        {
+          "title": "Cards Circular",
+          "id": "cards-circular",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"cards-circular\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div><h3>Category Name</h3></div></div></div>"
+            }
+          },
+          "model": "cards-circular",
+          "filter": "cards-circular"
+        },
+        {
+          "title": "Card Item",
+          "id": "card-circular-item",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div><h3>Category Name</h3></div></div>"
+            }
+          },
+          "model": "card-circular-item"
+        },
+        {
+          "title": "Cards List",
+          "id": "cards-list",
+          "plugins": {
+            "da": {
+              "name": "cards-list",
+              "rows": 2,
+              "columns": 2
+            }
+          },
+          "model": "cards-list",
+          "filter": "cards-list"
+        },
+        {
+          "title": "Card List Item",
+          "id": "cards-list-item",
+          "plugins": {
+            "da": {
+              "name": "cards-list-item",
+              "rows": 1,
+              "columns": 2
+            }
+          },
+          "model": "cards-list-item"
+        },
+        {
+          "title": "Cards",
+          "id": "cards",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"cards\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div></div>"
+            }
+          },
+          "model": "cards",
+          "filter": "cards"
+        },
+        {
+          "title": "Card",
+          "id": "card",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div>"
+            }
+          },
+          "model": "card"
+        },
+        {
+          "title": "Carousel",
+          "id": "carousel",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"carousel\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Carousel Slide",
+          "id": "carousel-item",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Columns",
+          "id": "columns",
+          "plugins": {
+            "da": {
+              "name": "columns",
+              "rows": 1,
+              "columns": 2,
+              "behaviour": "columns"
+            }
+          }
+        },
+        {
+          "title": "Columns Row",
+          "id": "columns-row",
+          "plugins": {
+            "da": {
+              "name": "columns-row",
+              "behaviour": "columns-row"
+            }
+          }
+        },
+        {
+          "title": "Columns Cell",
+          "id": "columns-cell",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div></div>",
+              "behaviour": "columns-cell"
+            }
+          }
+        },
+        {
+          "title": "Footer Columns",
+          "id": "footer-columns",
+          "plugins": {
+            "da": {
+              "name": "footer-columns",
+              "unsafeHTML": "<table><tr><th>Column 1 Header</th><th>Column 2 Header</th><th>Column 3 Header</th><th>Column 4 Header</th><th>Column 5 Header</th><th>Column 6 Header</th></tr><tr><td>Link 1</td><td>Link 1</td><td>Link 1</td><td>Link 1</td><td>Link 1</td><td>Link 1</td></tr><tr><td>Link 2</td><td>Link 2</td><td>Link 2</td><td>Link 2</td><td>Link 2</td><td>Link 2</td></tr><tr><td>Link 3</td><td>Link 3</td><td>Link 3</td><td>Link 3</td><td>Link 3</td><td>Link 3</td></tr></table>"
+            }
+          }
+        },
+        {
+          "title": "Fragment",
+          "id": "fragment",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"fragment\"><div><div><p><a href=\"\">Fragment URL</a></p></div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Hero",
+          "id": "hero",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"hero\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture><h1></h1></div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Luxury Events",
+          "id": "luxury-events",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"luxury-events\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\" alt=\"Logo\"></picture>Destination Luxury</div><div>EVENTS, STORIES AND MORE</div></div><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\" alt=\"Event\"></picture></div><div>EVENT TITLE</div><div>Event description goes here</div><div><a href=\"#\">Read more +</a></div></div></div>"
+            }
+          },
+          "model": "luxury-events",
+          "filter": "luxury-events"
+        },
+        {
+          "title": "Event Card",
+          "id": "luxury-event-card",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\" alt=\"Event\"></picture></div><div>EVENT TITLE</div><div>Event description goes here</div><div><a href=\"#\">Read more +</a></div></div>"
+            }
+          },
+          "model": "luxury-event-card"
+        },
+        {
+          "title": "Newsletter",
+          "id": "newsletter",
+          "plugins": {
+            "da": {
+              "name": "newsletter",
+              "rows": 4,
+              "columns": 2
+            }
+          },
+          "model": "newsletter"
+        },
+        {
+          "title": "Promotional Hero",
+          "id": "promotional-hero",
+          "plugins": {
+            "da": {
+              "name": "promotional-hero",
+              "rows": 2,
+              "columns": 3
+            }
+          },
+          "model": "promotional-hero",
+          "filter": "promotional-hero"
+        },
+        {
+          "title": "Promotional Card",
+          "id": "promotional-card",
+          "plugins": {
+            "da": {
+              "name": "promotional-card",
+              "rows": 1,
+              "columns": 3
+            }
+          },
+          "model": "promotional-card"
+        },
+        {
+          "title": "Quote",
+          "id": "quote",
+          "plugins": {
+            "da": {
+              "name": "quote",
+              "rows": 1,
+              "columns": 1
+            }
+          }
+        },
+        {
+          "title": "Search",
+          "id": "search",
+          "plugins": {
+            "da": {
+              "name": "search",
+              "rows": 1,
+              "columns": 1
+            }
+          }
+        },
+        {
+          "title": "Tabs",
+          "id": "tabs",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"tabs\"><div><div><p></p></div><div></div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Tabs Item",
+          "id": "tabs-item",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div><div><p></p></div><div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Video",
+          "id": "video",
+          "plugins": {
+            "da": {
+              "name": "video",
+              "rows": 1,
+              "columns": 1
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

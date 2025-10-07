@@ -1,0 +1,81 @@
+{
+  "definitions": [
+    {
+      "title": "Newsletter",
+      "id": "newsletter",
+      "plugins": {
+        "da": {
+          "name": "newsletter",
+          "rows": 4,
+          "columns": 2
+        }
+      },
+      "model": "newsletter"
+    }
+  ],
+  "models": [
+    {
+      "id": "newsletter",
+      "fields": [
+        {
+          "component": "plaintext",
+          "valueType": "string",
+          "name": "div:nth-child(1)>div:nth-child(1)",
+          "label": "Title",
+          "value": "Sign up to our newsletter"
+        },
+        {
+          "component": "plaintext",
+          "valueType": "string",
+          "name": "div:nth-child(1)>div:nth-child(2)",
+          "label": "Description",
+          "value": "Exciting news, exclusive events, & delicious products: subscribe to our emails to hear the latest from our luxury collection"
+        },
+        {
+          "component": "plaintext",
+          "valueType": "string",
+          "name": "div:nth-child(2)>div:nth-child(1)",
+          "label": "Dropdown 1 Label",
+          "value": "Where do you live?"
+        },
+        {
+          "component": "plaintext",
+          "valueType": "string",
+          "name": "div:nth-child(2)>div:nth-child(2)",
+          "label": "Dropdown 1 Options (comma-separated)",
+          "value": "United Kingdom, United States, Europe, Asia, Other"
+        },
+        {
+          "component": "plaintext",
+          "valueType": "string",
+          "name": "div:nth-child(3)>div:nth-child(1)",
+          "label": "Dropdown 2 Label",
+          "value": "Why did you decide to visit us today?"
+        },
+        {
+          "component": "plaintext",
+          "valueType": "string",
+          "name": "div:nth-child(3)>div:nth-child(2)",
+          "label": "Dropdown 2 Options (comma-separated)",
+          "value": "Shopping for gifts, Browsing for myself, Special occasion, Just browsing, Other"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "div:nth-child(4)>div:nth-child(1)",
+          "label": "Privacy Text",
+          "value": "For more details about how we use your information please see our Privacy Policy"
+        },
+        {
+          "component": "plaintext",
+          "valueType": "string",
+          "name": "div:nth-child(4)>div:nth-child(2)",
+          "label": "Button Text",
+          "value": "Sign Up"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
+

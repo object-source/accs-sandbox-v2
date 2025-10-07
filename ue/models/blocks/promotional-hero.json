@@ -1,0 +1,80 @@
+{
+  "definitions": [
+    {
+      "title": "Promotional Hero",
+      "id": "promotional-hero",
+      "plugins": {
+        "da": {
+          "name": "promotional-hero",
+          "rows": 2,
+          "columns": 3
+        }
+      },
+      "model": "promotional-hero",
+      "filter": "promotional-hero"
+    },
+    {
+      "title": "Promotional Card",
+      "id": "promotional-card",
+      "plugins": {
+        "da": {
+          "name": "promotional-card",
+          "rows": 1,
+          "columns": 3
+        }
+      },
+      "model": "promotional-card"
+    }
+  ],
+  "models": [
+    {
+      "id": "promotional-card",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[src]",
+          "label": "Card Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[alt]",
+          "label": "Image Alt Text",
+          "multi": false
+        },
+        {
+          "component": "richtext",
+          "name": "div:nth-child(2)",
+          "value": "",
+          "label": "Description",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "div:nth-child(3)>a:nth-child(1)[href]",
+          "label": "Button Link",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "div:nth-child(3)>a:nth-child(1)",
+          "label": "Button Text",
+          "multi": false
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "promotional-hero",
+      "components": [
+        "promotional-card"
+      ]
+    }
+  ]
+}
+

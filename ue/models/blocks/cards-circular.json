@@ -1,0 +1,61 @@
+{
+  "definitions": [
+    {
+      "title": "Cards Circular",
+      "id": "cards-circular",
+      "plugins": {
+        "da": {
+          "unsafeHTML": "<div class=\"cards-circular\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div><h3>Category Name</h3></div></div></div>"
+        }
+      },
+      "model": "cards-circular",
+      "filter": "cards-circular"
+    },
+    {
+      "title": "Card Item",
+      "id": "card-circular-item",
+      "plugins": {
+        "da": {
+          "unsafeHTML": "<div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div><h3>Category Name</h3></div></div>"
+        }
+      },
+      "model": "card-circular-item"
+    }
+  ],
+  "models": [
+    {
+      "id": "card-circular-item",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[src]",
+          "label": "Card Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "div:nth-child(1)>picture:nth-child(1)>img:nth-child(3)[alt]",
+          "label": "Image Alt Text",
+          "multi": false
+        },
+        {
+          "component": "richtext",
+          "name": "div:nth-child(2)",
+          "value": "",
+          "label": "Card Name",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "cards-circular",
+      "components": [
+        "card-circular-item"
+      ]
+    }
+  ]
+}

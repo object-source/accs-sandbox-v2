@@ -1,0 +1,61 @@
+{
+  "definitions": [
+    {
+      "title": "Section",
+      "id": "section",
+      "plugins": {
+        "da": {
+          "unsafeHTML": "<div></div>"
+        }
+      },
+      "filter": "section",
+      "model": "section"
+    }
+  ],
+  "models": [
+    {
+      "id": "section",
+      "fields": [
+        {
+          "component": "multiselect",
+          "name": "style",
+          "label": "Style",
+          "options": [
+            {
+              "name": "Highlight",
+              "value": "highlight"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "section",
+      "components": [
+        "accordion",
+        "cards",
+        "cards-circular",
+        "cards-list",
+        "carousel",
+        "columns",
+        "embed",
+        "footer-columns",
+        "fragment",
+        "form",
+        "hero",
+        "image",
+        "luxury-events",
+        "newsletter",
+        "promotional-hero",
+        "quote",
+        "search",
+        "tabs",
+        "table",
+        "text",
+        "video"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "definitions": [
+    {
+      "title": "Footer Columns",
+      "id": "footer-columns",
+      "plugins": {
+        "da": {
+          "name": "footer-columns",
+          "unsafeHTML": "<table><tr><th>Column 1 Header</th><th>Column 2 Header</th><th>Column 3 Header</th><th>Column 4 Header</th><th>Column 5 Header</th><th>Column 6 Header</th></tr><tr><td>Link 1</td><td>Link 1</td><td>Link 1</td><td>Link 1</td><td>Link 1</td><td>Link 1</td></tr><tr><td>Link 2</td><td>Link 2</td><td>Link 2</td><td>Link 2</td><td>Link 2</td><td>Link 2</td></tr><tr><td>Link 3</td><td>Link 3</td><td>Link 3</td><td>Link 3</td><td>Link 3</td><td>Link 3</td></tr></table>"
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "footer-columns",
+      "fields": [
+        {
+          "component": "plaintext",
+          "name": "tr:nth-child(1) > th:nth-child(1)",
+          "value": "",
+          "label": "Column 1 Header",
+          "valueType": "string"
+        },
+        {
+          "component": "plaintext",
+          "name": "tr:nth-child(1) > th:nth-child(2)",
+          "value": "",
+          "label": "Column 2 Header",
+          "valueType": "string"
+        },
+        {
+          "component": "plaintext",
+          "name": "tr:nth-child(1) > th:nth-child(3)",
+          "value": "",
+          "label": "Column 3 Header",
+          "valueType": "string"
+        },
+        {
+          "component": "plaintext",
+          "name": "tr:nth-child(1) > th:nth-child(4)",
+          "value": "",
+          "label": "Column 4 Header",
+          "valueType": "string"
+        },
+        {
+          "component": "plaintext",
+          "name": "tr:nth-child(1) > th:nth-child(5)",
+          "value": "",
+          "label": "Column 5 Header",
+          "valueType": "string"
+        },
+        {
+          "component": "plaintext",
+          "name": "tr:nth-child(1) > th:nth-child(6)",
+          "value": "",
+          "label": "Column 6 Header",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

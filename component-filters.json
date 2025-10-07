@@ -1,0 +1,99 @@
+[
+  {
+    "id": "main",
+    "components": [
+      "section"
+    ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "accordion",
+      "cards",
+      "cards-circular",
+      "cards-list",
+      "carousel",
+      "columns",
+      "embed",
+      "footer-columns",
+      "fragment",
+      "form",
+      "hero",
+      "image",
+      "luxury-events",
+      "newsletter",
+      "promotional-hero",
+      "quote",
+      "search",
+      "tabs",
+      "table",
+      "text",
+      "video"
+    ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "accordion-item"
+    ]
+  },
+  {
+    "id": "cards-circular",
+    "components": [
+      "card-circular-item"
+    ]
+  },
+  {
+    "id": "cards-list",
+    "components": [
+      "cards-list-item"
+    ]
+  },
+  {
+    "id": "cards",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "carousel-item"
+    ]
+  },
+  {
+    "id": "columns",
+    "components": [
+      "columns-row"
+    ]
+  },
+  {
+    "id": "columns-row",
+    "components": []
+  },
+  {
+    "id": "columns-cell",
+    "components": [
+      "text",
+      "image"
+    ]
+  },
+  {
+    "id": "luxury-events",
+    "components": [
+      "luxury-event-card"
+    ]
+  },
+  {
+    "id": "promotional-hero",
+    "components": [
+      "promotional-card"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tabs-item"
+    ]
+  }
+]
