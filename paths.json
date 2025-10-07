@@ -1,0 +1,12 @@
+{
+  "mappings": [
+    "/content/CitiSignal/:/",
+    "/content/CitiSignal/configuration:/.helix/config.json",
+    "/content/CitiSignal/headers:/.helix/headers.json",
+    "/content/CitiSignal/metadata:/metadata.json",
+    "/content/CitiSignal.resource/enrichment/enrichment.json:/enrichment/enrichment.json"
+  ],
+  "includes": [
+    "/content/CitiSignal/"
+  ]
+}
