@@ -68,18 +68,6 @@ footer .footer p {
 
 @media (min-width: 900px) {
     footer .footer > div {
-        padding: 10px 32px 24px;
-    }
-
-    .footer .section.columns-container {
-        padding: 0;
-    }
-
-    .footer .section.columns-container .columns > div > div {
-        flex: none
-    }
-
-    .footer .section.columns-container .default-content-wrapper p {
-        text-align: end;
+        padding: 40px 32px 24px;
     }
 }
