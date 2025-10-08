@@ -1,0 +1,12 @@
+{
+  "mappings": [
+    "/content/objectsource/:/",
+    "/content/objectsource/configuration:/.helix/config.json",
+    "/content/objectsource/headers:/.helix/headers.json",
+    "/content/objectsource/metadata:/metadata.json",
+    "/content/objectsource.resource/enrichment/enrichment.json:/enrichment/enrichment.json"
+  ],
+  "includes": [
+    "/content/objectsource/"
+  ]
+}
