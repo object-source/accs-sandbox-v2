@@ -482,6 +482,8 @@ main[hidden] {
 }
 
 .eds-demo {
-  background-color: #6eeb07;
+  background-color: #d90602;
   color: #0e0e0e;
+  max-width: 1200px!important;
+  padding: 20px 0;
 }
